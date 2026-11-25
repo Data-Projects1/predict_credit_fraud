@@ -39,37 +39,37 @@ O resultado deve fazer a previsão da probabilidade para a variável de fraude c
 
 #### Base de Dados
 
-train.csv - conjunto de treinamento, com dados de fraude como alvo.<br/>
-test.csv - conjunto de teste, utilizado para prever a fraude em transações com cartão de crédito.<br/>
+train.csv - conjunto de treinamento, com dados "is_fraud" como alvo.<br/>
+test.csv - conjunto de teste, utilizado para prever probabilidade "is_fraud".<br/>
 sample_submission.csv - arquivo de submissão de exemplo no formato correto.<br/>
 
 [Kaggle - Predicting Credit Card Fraud](https://www.kaggle.com/competitions/playground-series-s6e11/overview)
 
 #### Campos de Dados
 
-- id - ID que representa uma compra do conjunto de teste.<br/>
-- amount_usd <br/>
-- hours_since_last_txn <br/>
-- txn_count_last_24h <br/>
-- distance_from_home_km <br/>
-- card_age_months <br/>
-- customer_age <br/>
-- account_balance_usd <br/>
-- cvv_retry_count <br/>
-- velocity_score <br/>
-- time_of_day_hour <br/>
-- day_of_week <br/>
-- merchant_risk_score <br/>
-- prior_disputes <br/>
-- merchant_category <br/>
-- card_type <br/>
-- auth_method <br/>
-- channel <br/>
-- device_type <br/>
-- is_foreign_transaction <br/>
-- is_new_merchant <br/>
-- used_vpn <br/>
-- ip_country_mismatch <br/>
-- billing_shipping_mismatch <br/>
-- is_ai_generated_scam_attempt <br/>
-- is_fraud <br/>
+- id - ID que representa uma transação do conjunto de teste.<br/>
+- amount_usd - Montante em USD na transação.<br/>
+- hours_since_last_txn - Tempo desde a última transação em horas.<br/>
+- txn_count_last_24h - Número de transações nas últimas 24h.<br/>
+- distance_from_home_km - Distância entre o comerciante e residência.<br/>
+- card_age_months - Idade do cartão de crédito.<br/>
+- customer_age - Idade do comprador.<br/>
+- account_balance_usd - Saldo da conta em USD.<br/>
+- cvv_retry_count - Número detentativas do uso do código de segurança do cartão.<br/>
+- velocity_score - Índice de velocidade de transações por intervalo de tempo.<br/>
+- time_of_day_hour - Hora da transação no dia.<br/>
+- day_of_week - Dia da semana da transação.<br/>
+- merchant_risk_score - Índice de risco do comerciante.<br/>
+- prior_disputes - Índice de contestação do comprador. <br/>
+- merchant_category - Categoria do comerciante. <br/>
+- card_type - Tipo do cartão de crédito.<br/>
+- auth_method - Método de autenticação da transação. <br/>
+- channel - Canal da transação.<br/>
+- device_type - Dispositivo da transação.<br/>
+- is_foreign_transaction - Transação internacional<br/>
+- is_new_merchant - Primeira transação no comerciante.<br/>
+- used_vpn - Uso de VPN na transação.<br/>
+- ip_country_mismatch - Divergência país do IP e origem.<br/>
+- billing_shipping_mismatch - Divergência de endereço de cobrança e envio.<br/>
+- is_ai_generated_scam_attempt - Tentativa de fraude por IA<br/>
+- is_fraud - Indicativo de Fraude. <br/>
