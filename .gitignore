@@ -9,7 +9,6 @@ __pycache__/
 
 # Pastas de dados
 dataset/
-img/
 
 # Editor / sistema
 .vscode/
