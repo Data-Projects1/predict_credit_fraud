@@ -9,6 +9,7 @@ __pycache__/
 
 # Pastas de dados
 dataset/
+submission.csv
 
 # Editor / sistema
 .vscode/
