@@ -8,8 +8,7 @@ __pycache__/
 .env
 
 # Pastas de dados
-dataset/
-submission.csv
+
 
 # Editor / sistema
 .vscode/
